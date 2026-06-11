@@ -1,0 +1,9 @@
+[project]
+name = "attention-bilstm-intent-router"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "datasets>=5.0.0",
+]
