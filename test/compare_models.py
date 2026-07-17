@@ -54,22 +54,6 @@ with open(TEST_MESSAGES_PATH, "r", encoding="utf-8") as f:
 # 3. DEFINE PREPROCESSING & INFERENCE FUNCTIONS
 
 # --- LSTM Preprocessing & Prediction Flow (As Trained) ---
-FLUFF_PATTERNS = [
-    r"^hello\s+(customer\s+service|support|team|department)?\b",
-    r"^hi\s+(customer\s+service|support|team|department)?\b",
-    r"^hey\s+(customer\s+service|support|team|department)?\b",
-    r"\bi\s+am\s+writing\s+(this\s+long\s+message|to\s+you)\s+because\b",
-    r"\bcould\s+you\s+please\b",
-    r"\bplease\s+look\s+up\b",
-    r"\blook\s+up\b"
-]
-
-def strip_conversational_fluff(text: str) -> str:
-    text = text.lower().strip()
-    for pattern in FLUFF_PATTERNS:
-        text = re.sub(pattern, "", text).strip()
-    return text
-
 def lean_autocorrect(text):
     text = text.lower().strip()
     words = re.findall(r'\b\w+\b', text)
@@ -87,11 +71,8 @@ def predict_lstm(raw_query, max_len=16):
     # Step A: Typo Correction (Spell Checker active)
     clean_text = lean_autocorrect(raw_query)
     
-    # Step B: Conversational Fluff stripping
-    trimmed_text = strip_conversational_fluff(clean_text)
-    
-    # Step C: Lemmatizer (spaCy active)
-    doc = nlp(trimmed_text)
+    # Step B: Lemmatizer (spaCy active)
+    doc = nlp(clean_text)
     tokens = [token.lemma_.lower() for token in doc if not token.is_punct and not token.is_space]
     
     # Step D: Indexing and Padding
