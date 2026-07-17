@@ -1,0 +1,402 @@
+[
+    {
+        "text": "hi customer service, i need help cancelling purchase 12345",
+        "intent": "cancel_order"
+    },
+    {
+        "text": "please stop my transaction 12345 immediately",
+        "intent": "cancel_order"
+    },
+    {
+        "text": "i cannot afford this order, cancel purchase 12345 now",
+        "intent": "cancel_order"
+    },
+    {
+        "text": "need to cancel my order please",
+        "intent": "cancel_order"
+    },
+    {
+        "text": "i want to edit my purchase 12345",
+        "intent": "change_order"
+    },
+    {
+        "text": "please add another item to my current order 12345",
+        "intent": "change_order"
+    },
+    {
+        "text": "chnge my items in order 12345 plss",
+        "intent": "change_order"
+    },
+    {
+        "text": "need to modify the size of my ordered shirt 12345",
+        "intent": "change_order"
+    },
+    {
+        "text": "hey support, i accidentally put the wrong street address, update it please",
+        "intent": "change_shipping_address"
+    },
+    {
+        "text": "can you change where my package 12345 is going",
+        "intent": "change_shipping_address"
+    },
+    {
+        "text": "i need to modify my shipping details for the delivery",
+        "intent": "change_shipping_address"
+    },
+    {
+        "text": "incorrect address on order, please fix it",
+        "intent": "change_shipping_address"
+    },
+    {
+        "text": "do i get charged for cancelling my subscription?",
+        "intent": "check_cancellation_fee"
+    },
+    {
+        "text": "what is the early exit fee for my account",
+        "intent": "check_cancellation_fee"
+    },
+    {
+        "text": "is there a penalty for closing my order early?",
+        "intent": "check_cancellation_fee"
+    },
+    {
+        "text": "could you show me the receipt for 12345",
+        "intent": "check_invoice"
+    },
+    {
+        "text": "i need to check my billing statement details",
+        "intent": "check_invoice"
+    },
+    {
+        "text": "where is the invoice for my payment last month?",
+        "intent": "check_invoice"
+    },
+    {
+        "text": "what card types do you accept?",
+        "intent": "check_payment_methods"
+    },
+    {
+        "text": "can i pay with paypal or apple pay?",
+        "intent": "check_payment_methods"
+    },
+    {
+        "text": "is there any transaction fee for credit cards?",
+        "intent": "check_payment_methods"
+    },
+    {
+        "text": "what payment modalities are supported?",
+        "intent": "check_payment_methods"
+    },
+    {
+        "text": "can i pay with cash on delivery?",
+        "intent": "check_payment_methods"
+    },
+    {
+        "text": "what is your return and refund policy?",
+        "intent": "check_refund_policy"
+    },
+    {
+        "text": "how long do i have to return an item for refund?",
+        "intent": "check_refund_policy"
+    },
+    {
+        "text": "is it possible to get my cash back if i am not satisfied?",
+        "intent": "check_refund_policy"
+    },
+    {
+        "text": "do you offer store credit refund?",
+        "intent": "check_refund_policy"
+    },
+    {
+        "text": "i am very disappointed with the service i received today",
+        "intent": "complaint"
+    },
+    {
+        "text": "the product arrived damaged and broken, this is unacceptable",
+        "intent": "complaint"
+    },
+    {
+        "text": "worst customer support experience ever",
+        "intent": "complaint"
+    },
+    {
+        "text": "i have a serious issue and i want to complain",
+        "intent": "complaint"
+    },
+    {
+        "text": "hey team, how can i contact support?",
+        "intent": "contact_customer_service"
+    },
+    {
+        "text": "is there a customer service phone number?",
+        "intent": "contact_customer_service"
+    },
+    {
+        "text": "help me reach the support department please",
+        "intent": "contact_customer_service"
+    },
+    {
+        "text": "i want to speak with a human agent, not a chatbot",
+        "intent": "contact_human_agent"
+    },
+    {
+        "text": "transfer me to a real person please",
+        "intent": "contact_human_agent"
+    },
+    {
+        "text": "can i talk to a live representative?",
+        "intent": "contact_human_agent"
+    },
+    {
+        "text": "connect me to a human agent",
+        "intent": "contact_human_agent"
+    },
+    {
+        "text": "how do i sign up for a new profile?",
+        "intent": "create_account"
+    },
+    {
+        "text": "i want to create a new user account on this site",
+        "intent": "create_account"
+    },
+    {
+        "text": "help me register a login profile please",
+        "intent": "create_account"
+    },
+    {
+        "text": "where is the registration page?",
+        "intent": "create_account"
+    },
+    {
+        "text": "please close my account immediately",
+        "intent": "delete_account"
+    },
+    {
+        "text": "i want to permanently delete my user profile",
+        "intent": "delete_account"
+    },
+    {
+        "text": "how do i cancel and remove my account details?",
+        "intent": "delete_account"
+    },
+    {
+        "text": "delet my account noww",
+        "intent": "delete_account"
+    },
+    {
+        "text": "what shipping options do you have?",
+        "intent": "delivery_options"
+    },
+    {
+        "text": "can i get next-day delivery on my purchase?",
+        "intent": "delivery_options"
+    },
+    {
+        "text": "do you offer international shipping?",
+        "intent": "delivery_options"
+    },
+    {
+        "text": "what are your delivery methods?",
+        "intent": "delivery_options"
+    },
+    {
+        "text": "how long does it take for my order to arrive?",
+        "intent": "delivery_period"
+    },
+    {
+        "text": "when will my shipment be delivered?",
+        "intent": "delivery_period"
+    },
+    {
+        "text": "expected delivery timeframe for standard package?",
+        "intent": "delivery_period"
+    },
+    {
+        "text": "i need to change my contact details on my profile",
+        "intent": "edit_account"
+    },
+    {
+        "text": "how do i update my name and email?",
+        "intent": "edit_account"
+    },
+    {
+        "text": "edit my account details please",
+        "intent": "edit_account"
+    },
+    {
+        "text": "please email me my invoice for 12345",
+        "intent": "get_invoice"
+    },
+    {
+        "text": "i need to download the bill statement",
+        "intent": "get_invoice"
+    },
+    {
+        "text": "can i get a copy of my receipt?",
+        "intent": "get_invoice"
+    },
+    {
+        "text": "i bought this yesterday but want a refund",
+        "intent": "get_refund"
+    },
+    {
+        "text": "please return my money for order 12345",
+        "intent": "get_refund"
+    },
+    {
+        "text": "demand a full refund to my bank account",
+        "intent": "get_refund"
+    },
+    {
+        "text": "refnd my cash pls, transaction went wrong",
+        "intent": "get_refund"
+    },
+    {
+        "text": "i want to subscribe to your daily newsletters",
+        "intent": "newsletter_subscription"
+    },
+    {
+        "text": "sign me up for the mailing list",
+        "intent": "newsletter_subscription"
+    },
+    {
+        "text": "how do i stop getting promotional newsletters?",
+        "intent": "newsletter_subscription"
+    },
+    {
+        "text": "cancel newsletter subscrie",
+        "intent": "newsletter_subscription"
+    },
+    {
+        "text": "my credit card keeps getting declined at checkout",
+        "intent": "payment_issue"
+    },
+    {
+        "text": "i got double charged on my bank statement",
+        "intent": "payment_issue"
+    },
+    {
+        "text": "payment failed but money was deducted",
+        "intent": "payment_issue"
+    },
+    {
+        "text": "error processing payment transaction",
+        "intent": "payment_issue"
+    },
+    {
+        "text": "card declined multiple times but got transaction message",
+        "intent": "payment_issue"
+    },
+    {
+        "text": "i want to buy these items in my cart",
+        "intent": "place_order"
+    },
+    {
+        "text": "help me check out and place this order please",
+        "intent": "place_order"
+    },
+    {
+        "text": "how do i buy a subscription plan?",
+        "intent": "place_order"
+    },
+    {
+        "text": "i forgot my login password, help me reset it",
+        "intent": "recover_password"
+    },
+    {
+        "text": "forgor my passwrd",
+        "intent": "recover_password"
+    },
+    {
+        "text": "how do i recover my account password?",
+        "intent": "recover_password"
+    },
+    {
+        "text": "locked out of my profile, reset password link please",
+        "intent": "recover_password"
+    },
+    {
+        "text": "the signup button is completely greyed out and broken",
+        "intent": "registration_problems"
+    },
+    {
+        "text": "i get a system validation error when registering",
+        "intent": "registration_problems"
+    },
+    {
+        "text": "cant finish registration due to error",
+        "intent": "registration_problems"
+    },
+    {
+        "text": "i want to leave feedback about the product",
+        "intent": "review"
+    },
+    {
+        "text": "where can i write a review for this purchase?",
+        "intent": "review"
+    },
+    {
+        "text": "how do i rate my support experience?",
+        "intent": "review"
+    },
+    {
+        "text": "where do i save my default shipping details?",
+        "intent": "set_up_shipping_address"
+    },
+    {
+        "text": "i want to add a shipping address to my account profile",
+        "intent": "set_up_shipping_address"
+    },
+    {
+        "text": "how do i set my delivery address?",
+        "intent": "set_up_shipping_address"
+    },
+    {
+        "text": "i need to switch to my other account",
+        "intent": "switch_account"
+    },
+    {
+        "text": "how do i log out and log in with another profile?",
+        "intent": "switch_account"
+    },
+    {
+        "text": "change account login please",
+        "intent": "switch_account"
+    },
+    {
+        "text": "track my shipped package 12345",
+        "intent": "track_order"
+    },
+    {
+        "text": "where is my order 12345 currently?",
+        "intent": "track_order"
+    },
+    {
+        "text": "package status says delivered but i havent received anything",
+        "intent": "track_order"
+    },
+    {
+        "text": "trackin number says shipped, check status please",
+        "intent": "track_order"
+    },
+    {
+        "text": "tracking my package delivery status please",
+        "intent": "track_order"
+    },
+    {
+        "text": "im waiting for restitution of my refund 12345",
+        "intent": "track_refund"
+    },
+    {
+        "text": "track the status of my refund payment",
+        "intent": "track_refund"
+    },
+    {
+        "text": "when will the refund money show up on my card?",
+        "intent": "track_refund"
+    },
+    {
+        "text": "check the state of my refund transaction",
+        "intent": "track_refund"
+    }
+]
